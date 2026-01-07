@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import API from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png';
+const logo = "../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png"
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');

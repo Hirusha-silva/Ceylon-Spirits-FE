@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'http://localhost:5001/api',
     withCredentials: true,
 });
 
@@ -40,7 +40,7 @@ API.interceptors.response.use(
             isRefreshing = true;
 
             try {
-                const refreshRes = await axios.post('http://localhost:8000/api/auth/refresh', {}, { withCredentials: true });
+                const refreshRes = await axios.post('http://localhost:5001/api/auth/refresh', {}, { withCredentials: true });
                 const newToken = refreshRes.data.accessToken;
                 localStorage.setItem('accessToken', newToken);
                 API.defaults.headers.common['Authorization'] = 'Bearer ' + newToken;

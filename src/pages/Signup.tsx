@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import API from '../api/axios';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png'
-
+const Logo = "../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png"
 const Signup: React.FC = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');

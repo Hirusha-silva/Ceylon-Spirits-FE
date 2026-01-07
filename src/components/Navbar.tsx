@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import Logo from '../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png'
+const Logo = "../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png"
 const Navbar: React.FC = () => {
     const { user, logout } = useContext(AuthContext);
     const nav = useNavigate();
