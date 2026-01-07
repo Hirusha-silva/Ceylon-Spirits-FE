@@ -2,7 +2,8 @@ import React, { useState, useContext } from 'react';
 import API from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-const logo = "../assets/ChatGPT Image Jan 5, 2026, 11_48_27 AM.png"
+// @ts-ignore: allow importing image asset without type declaration
+import logo from "../assets/logo.png";
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');

@@ -5,6 +5,7 @@ interface Props {
     onClose: () => void;
     onBuy: () => void;
     onSelectAlcohol?: (a: string) => void;
+    className?:string
 }
 
 const ProductModal: React.FC<Props> = ({ product, onClose, onBuy, onSelectAlcohol }) => {
