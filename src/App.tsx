@@ -21,7 +21,7 @@ const App: React.FC = () => {
                 <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path="/" element={<UserDashboard />} />
+                    <Route path="/" element={<PrivateRoute><UserDashboard /></PrivateRoute>} />
                     <Route path="/juice" element={<Juice />} />
                     <Route path="/cocktail" element={<PrivateRoute><Cocktail /></PrivateRoute>} />
                     <Route path="/custom" element={<PrivateRoute><Custom /></PrivateRoute>} />
